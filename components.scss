@@ -1,10 +1,13 @@
 @use "./base" as *;
 
-  
 @keyframes fadein {
-  from { opacity: 0; }
-  to   { opacity: 1; }
+  from {
+    opacity: 0;
   }
+  to {
+    opacity: 1;
+  }
+}
 
 @keyframes pulse {
   0% {
@@ -13,18 +16,22 @@
 
   50% {
     transform: scale(1.2);
-  }  
+  }
   100% {
     transform: scale(1);
   }
 }
 
 @keyframes windmillspin {
-  0%{transform: rotate(0deg);}
-  100%{transform: rotate(360deg);}
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
-.nav__button  {
+.nav__button {
   font-family: $font-body;
   font-size: 15px;
   color: $color-white;
@@ -32,38 +39,35 @@
 }
 
 .nav__button:hover {
-    transform: scale(1.1);
+  transform: scale(1.1);
 }
 
-.skills{
+.skills {
   animation-delay: 6s;
   animation: fadein 6s;
 }
 
-.projects{
+.projects {
   animation-delay: 7s;
   animation: fadein 7s;
 }
 
-.contact{
+.contact {
   animation-delay: 8s;
   animation: fadein 8s;
 }
-
-
 
 .landing-page__hi {
   color: $color-white;
   font-size: 80px;
   margin: 65px;
   animation: fadein 2s, pulse 30s;
-}  
-
+}
 
 .landing-page__windmill {
   fill: $color-white;
   padding-bottom: 50px;
-  display:block;
+  display: block;
   text-align: center;
 }
 
@@ -82,12 +86,15 @@
 
 .section-header {
   color: $color-white;
+  margin-top: 100px;
+  margin-bottom: 10px;
   width: auto;
   text-align: center;
   font-size: 30px;
 }
 
 .scrollbar {
+  margin: 40px;
   padding: 30px;
   display: flex;
   flex-direction: column;
@@ -101,17 +108,22 @@
 .skills-techstack {
   margin: 20px;
   height: 100vh;
-  width: 100vh;
+  width: 100%;
   color: $color-white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .skills-techstack__grid {
-    display: grid;  
-    grid-template-columns: 200px 200px 200px 200px;
-    padding: 10px;
-    justify-content: center;
-    align-items: center;
-  }
+  display: grid;
+  grid-template-columns: 200px 200px 200px 200px;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+  width: 90vw;
+}
 
 .skills-techstack__icon {
   display: flex;
@@ -120,21 +132,21 @@
   justify-content: center;
   align-items: center;
   transition: 0.45s;
+  padding: 10px;
 }
 
-.icondesc {
+.skills-techstack__icondesc {
   text-align: center;
   font-size: 25px;
   opacity: 0;
 }
 
-.icondesc:hover {
+.skills-techstack__icondesc:hover {
   transition: 0.45s;
   opacity: 1;
 }
 
-
-#projects-row {
+.projects-row {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -150,13 +162,13 @@
   height: 300px;
   border-radius: 10px;
   text-align: center;
-  opacity: 0.6; 
-  box-shadow: 0px 5px 8px 0px rgba(0,0,0,0.5);
+  opacity: 0.6;
+  box-shadow: 0px 5px 8px 0px rgba(0, 0, 0, 0.5);
   margin: 20px;
   font-size: 20px;
-} 
+}
 
 .project-card:hover {
   opacity: 1;
-  box-shadow: 0px 5px 8px 0px rgba(0,0,0,1);
+  box-shadow: 0px 5px 8px 0px rgba(0, 0, 0, 1);
 }
