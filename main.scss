@@ -1,0 +1,48 @@
+@use "./base";
+@use "./components";
+@use "./layouts";
+
+
+
+@media only screen and (min-width: 425px)  {
+  .landing-page__hi {
+    font-size: 100px;
+  }
+
+  .skills-techstack__icon {
+    font-size: 40px;
+  }
+}
+
+@media only screen and (max-width: 800px)  {
+  .skills-techstack__grid {
+    grid-template-columns: 200px 200px;
+  }
+
+  #projects-row {
+    flex-direction: column;
+  }
+
+  .project-card {
+    width: 275px;
+    height: 400px;
+  }
+};
+
+@media screen and (min-width: 800px) {
+  .skills-techstack__icon {
+    font-size: 60px;
+  }
+  .icondesc {
+    font-size: 30px;
+  }
+
+
+}
+
+@media screen and (min-width: 1200px) {
+  .skills-techstack__grid {
+    grid-template-columns: 300px 300px 300px 300px;
+  }
+}
+
