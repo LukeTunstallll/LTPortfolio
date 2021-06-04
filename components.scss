@@ -72,7 +72,7 @@
 }
 
 .landing-page__windmill-blades {
-  animation: fadein 3s, windmillspin 120s;
+  animation: fadein 3s, windmillspin 30s;
 }
 
 .landing-page__header {
@@ -141,7 +141,7 @@
   opacity: 0;
 }
 
-.skills-techstack__icondesc:hover {
+.skills-techstack__icon:hover .skills-techstack__icondesc {
   transition: 0.45s;
   opacity: 1;
 }
