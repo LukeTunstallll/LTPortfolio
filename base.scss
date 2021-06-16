@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Arbutus+Slab&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Arbutus+Slab&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap");
 
 $font-headers: "Arbutus Slab", Arial;
 $font-body: "Roboto Slab", sans-serif;
@@ -14,24 +14,21 @@ html {
 }
 
 * {
-  margin:0;
-  padding:0;
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
-
 }
 
 body {
-  background: linear-gradient(to bottom, #2F496E,#6FC8F9);
-    height: 100%;
-    margin: 0;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+  background: linear-gradient(to bottom, #2f496e, #6fc8f9);
+  height: 100%;
+  margin: 0;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 
   width: fit-content;
 }
 
-
 a {
   text-decoration: none;
 }
-
