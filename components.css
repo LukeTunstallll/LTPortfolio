@@ -8,6 +8,7 @@ html {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Roboto Slab", sans-serif;
 }
 
 body {
@@ -21,6 +22,7 @@ body {
 
 a {
   text-decoration: none;
+  color: inherit;
 }
 
 @keyframes fadein {
@@ -79,6 +81,7 @@ a {
 .landing-page__hi {
   color: #f4eade;
   font-size: 80px;
+  font-family: "Arbutus Slab", Arial;
   margin: 65px;
   animation: fadein 2s, pulse 30s;
 }
@@ -101,6 +104,7 @@ a {
   align-items: center;
   flex-direction: column;
   animation: fadein 8s;
+  font-family: "Arbutus Slab", Arial;
 }
 
 .section-header {
@@ -122,6 +126,7 @@ a {
   color: #f4eade;
   animation: fadein 10s;
   fill: #f4eade;
+  font-family: "Roboto Slab", sans-serif;
 }
 
 .skills-techstack {
@@ -165,12 +170,14 @@ a {
   opacity: 1;
 }
 
-.projects-row {
-  display: flex;
+.projects-grid {
+  display: grid;
   justify-content: center;
   align-items: center;
-  width: auto;
+  grid-template-columns: 1fr;
   margin: 0px;
+  grid-gap: 0px;
+  width: 100vw;
 }
 
 .project-card {
@@ -178,15 +185,16 @@ a {
   padding: 20px;
   border: 1px solid #2988bc;
   color: #f4eade;
-  height: 350px;
+  height: 400px;
   border-radius: 10px;
   text-align: center;
   opacity: 0.6;
   box-shadow: 0px 5px 8px 0px rgba(0, 0, 0, 0.5);
   margin: 20px;
   font-size: 20px;
+  align-self: center;
+  justify-self: center;
 }
-
 .project-card img {
   height: 200px;
   width: 200px;
@@ -199,7 +207,7 @@ a {
 
 #contacts-content__Links {
   color: #f4eade;
-  font-size: 30px;
+  font-size: 25px;
   display: grid;
   grid-template-columns: 1fr;
   justify-content: center;
