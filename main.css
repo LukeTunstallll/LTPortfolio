@@ -162,7 +162,7 @@ a {
 .skills-techstack__icondesc {
   text-align: center;
   font-size: 25px;
-  opacity: 0;
+  opacity: 0.01;
 }
 
 .skills-techstack__icon:hover .skills-techstack__icondesc {
@@ -223,7 +223,6 @@ a {
 .navigation {
   height: 10vh;
   width: 100vw;
-  padding: 5px;
   display: flex;
   justify-content: flex-end;
   align-items: center;
